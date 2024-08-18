@@ -1,6 +1,6 @@
 # TechnoWatches
 
-TechnoWatches is a modern watch shopping application built with React, utilizing the Context API with the `useReducer` hook for state management, and Firebase for authentication and data storage. The application features a dynamic user experience with advanced product browsing and checkout capabilities.
+TechnoWatches is a modern watch shopping application built with React,Tailwindcss utilizing the Context API with the `useReducer` hook for state management, and Firebase for authentication and data storage. The application features a dynamic user experience with advanced product browsing and checkout capabilities.
 
 ## Features
 
