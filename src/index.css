@@ -1,0 +1,204 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background: linear-gradient(#2b2a2a, #706d6d);
+  overflow-x: hidden;
+}
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #ffdc00!important;
+}
+.mySwiper .swiper-slide img {
+    transition: transform 0.3s ease-in-out; /* Adjust the duration and easing as needed */
+    height: 30vh;
+    width: 100%;
+    
+    filter: brightness(50%);
+    
+    
+  }
+
+  
+  .swiper-slide{
+    overflow: hidden!important;
+   
+   
+    
+   
+   
+  }
+  .mySwiper .swiper-slide img:hover {
+    transform: scale(1.05) !important;
+    cursor: pointer;
+  }
+
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  /* src/styles.css */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-weight: 900;
+    color: #000;
+    
+    
+  }
+  
+  .pagination a {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #000;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .pagination .active a {
+    background-color: #000;
+    color: #ffdc00;
+  }
+  
+  .pagination .disabled a {
+    color: #ccc;
+    border: 1px solid #ccc;
+    opacity: 0.3;
+    
+  }
+  
+  
+  
+  /*Loaderscss*/
+  /* src/components/ClockLoader.css */
+  @keyframes rotate-hour {
+    from { transform: rotate(90deg); }
+    to { transform: rotate(450deg); }
+  }
+  
+  @keyframes rotate-minute {
+    from { transform: rotate(90deg); }
+    to { transform: rotate(450deg); }
+  }
+  
+  @keyframes rotate-second {
+    from { transform: rotate(90deg); }
+    to { transform: rotate(450deg); }
+  }
+  
+  .animate-hour-hand {
+    animation: rotate-hour 43200s infinite linear;
+  }
+  
+  .animate-minute-hand {
+    animation: rotate-minute 3600s infinite linear;
+  }
+  
+  .animate-second-hand {
+    animation: rotate-second 60s infinite linear;
+  }
+  
+  
+  
+  
+  /*CUSTOM SCROLL BAR*/
+  /* Global Scrollbar Styles */
+  
+  /* For Webkit Browsers */
+  ::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #000; /* Background color of the track */
+    border: 1px solid #ffdc00;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #ffdc00;
+    border: 1px solid #000;
+  }
+  
+  /* For Firefox */
+ 
+  
+/* src/components/WatchLoader.css */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 3s ease-in-out;
+}
+
+.animate-fade-up-delay-200 {
+  animation: fadeUp 2s ease-in-out 0.2s forwards;
+}
+
+.animate-fade-up-delay-400 {
+  animation: fadeUp 2s ease-in-out 0.4s forwards;
+}
+
+.animate-fade-up-delay-600 {
+  animation: fadeUp 2s ease-in-out 0.6s forwards;
+}
+
+/* modal animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+/*register form*/
+.errors{
+  color: red;
+}
+
+
+
+
+/*media Queries*/
+
+@media (max-width: 640px) {
+  .mySwiper .swiper-slide img {
+   
+    height: 50vh;
+    
+    
+  }
+  .mqheading{
+    font-size: 1.25rem!important;
+    line-height: 1.75rem!important;
+    font-weight: 700!important;
+  }
+}
+  
+  
