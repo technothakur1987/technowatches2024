@@ -25,13 +25,9 @@ TechnoWatches is a modern watch shopping application built with React,Tailwindcs
 - **react-medium-image-zoom**: For zooming into product images.
 - **yup**: For form validation.
 - **react-toastify**: For toast notifications and alerts.
+- - **tailwind css**: for styling.
 
-## Installation
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/technowatches.git
-   cd technowatches
 
 
 
