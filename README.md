@@ -26,6 +26,10 @@ TechnoWatches is a modern watch shopping application built with React,Tailwindcs
 - **yup**: For form validation.
 - **react-toastify**: For toast notifications and alerts.
 - - **tailwind css**: for styling.
+ 
+ ## Future Features
+ - **Admin Panel**: We can also create an adminpanel where we can manage our orders, products .
+ - - **Payment Gateway**: Integrating a payment gateway , making it more ready to use product .
 
 
 
